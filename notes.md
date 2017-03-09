@@ -8,14 +8,17 @@ Pedalboard specs
 
 UI Buttons
 ----------
-0. Preset 0
-1. Preset 1
-2. Preset 2
-3. Preset 3
-4. Preset 4
-5. Bank +
-6. Bank -
-7. Tempo Tap, Tuner, Set
+- 0 ~ 4. Preset 0
+- 5. Bank +
+- 6. Bank -
+- 7. Tempo Tap, Tuner, Set
+
+UI Leds
+-------
+- 0 ~ 4. Presets
+- 5 ~ 20. Effects
+- 21. Tempo
+
 
 ###Functions:
 - Tuner: hold tap tempo
@@ -30,6 +33,11 @@ Port map
 - A4: I2C SDA
 - A5: I2C SCL
 - 
+
+I2C devices
+-----------
+- 0x20 Display
+- Memory ?
 
 
 EEPROM Memory 
