@@ -1,9 +1,39 @@
-Pedalboard spects
+PedalBoard Annotations
+======================
+
+Pedalboard specs
 -----------------
 - 16 Effects. Names in code array.
 - 8 Banks of 5 presets = 40 presets.
 
-#EEPROM Memory 
+UI Buttons
+----------
+0. Preset 0
+1. Preset 1
+2. Preset 2
+3. Preset 3
+4. Preset 4
+5. Bank +
+6. Bank -
+7. Tempo Tap, Tuner, Set
+
+###Functions:
+- Tuner: hold tap tempo
+- Program: hold preset, use bank +- to select effect, use set to activate/deactivate, click preset to save
+
+Port map
+--------
+- A0
+- A1: Audio in
+- A2: Buttons interface 
+- A3:
+- A4: I2C SDA
+- A5: I2C SCL
+- 
+
+
+EEPROM Memory 
+-------------
 1024 bytes
 
 - Program states
