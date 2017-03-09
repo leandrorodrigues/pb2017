@@ -24,10 +24,10 @@ UI Leds
 
 Port map
 --------
-- A0
-- A1: Audio in
-- A2: Buttons interface 
-- A3:
+- A0: Audio in
+- A1: 
+- A2: 
+- A3: Buttons interface 
 - A4: I2C SDA
 - A5: I2C SCL
 - 0: RX
@@ -39,11 +39,11 @@ Port map
 - 6: (pwm)
 - 7:
 - 8:
-- 9: (pwm)
-- 10: (pwm)
-- 11: (pwm)(MOSI)
-- 12: (MISO)
-- 13: (SCK)
+- 9: Tremolo Led
+- 10: Digital Pot SPI CS
+- 11: SPI MOSI  
+- 12: SPI MISO
+- 13: SPI SCK
 
 I2C devices
 -----------
