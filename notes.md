@@ -1,3 +1,8 @@
+Pedalboard spects
+-----------------
+- 16 Effects. Names in code array.
+- 16 Banks of 5 presets = 80 presets.
+
 #EEPROM Memory 
 1024 bytes
 
@@ -10,16 +15,13 @@ address 100 to 199
  - Selected program: address 50
  - Tempo tap time: address 51
   
-- Effects names
-  24 slots of 16 bytes, address 200 to 584
-  - Effect 0: address 200 to 209
-  - Effect 1: address 210 to 219
-  - ...
-  - Effect 31: address 510 to 519
+- Effects by Banks relation
+  - Bank 0: preset 0 address 
+
 - Bank names
-  24 slots of 16 bytes, address 600 to 984
-  - Bank 0: address 600 to 609
-  - Bank 1: address 610 to 619
+  16 slots of 16 bytes, address
+  - Bank 0: address 
+  - Bank 1: address 
   - ...
-  - Bank 32: address 910 to 919
+  - Bank 32: address 
   
