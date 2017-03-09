@@ -13,16 +13,14 @@ UI Buttons
 - 6. Bank -
 - 7. Tempo Tap, Tuner, Set
 
-UI Leds
--------
-- 0 ~ 4. Presets
-- 5 ~ 20. Effects
-- 21. Tempo
-
-
 ###Functions:
 - Tuner: hold tap tempo
 - Program: hold preset, use bank +- to select effect, use set to activate/deactivate, click preset to save
+
+UI Leds
+-------
+- 0 ~ 4. Presets
+- 5. Tempo
 
 Port map
 --------
@@ -32,7 +30,20 @@ Port map
 - A3:
 - A4: I2C SDA
 - A5: I2C SCL
-- 
+- 0: RX
+- 1: TX
+- 2:
+- 3: (pwm)
+- 4:
+- 5: (pwm)
+- 6: (pwm)
+- 7:
+- 8:
+- 9: (pwm)
+- 10: (pwm)
+- 11: (pwm)(MOSI)
+- 12: (MISO)
+- 13: (SCK)
 
 I2C devices
 -----------
