@@ -12,10 +12,11 @@ UI Buttons
 - 5. Bank +
 - 6. Bank -
 - 7. Tempo Tap, Tuner, Set
+- 8. Program
 
-###Functions:
+### Functions:
 - Tuner: hold tap tempo
-- Program: hold preset, use bank +- to select effect, use set to activate/deactivate, click preset to save
+- Program: hold pgr, use bank +- to select effect, use set to activate/deactivate, click preset to save
 
 UI Leds
 -------
@@ -38,7 +39,7 @@ Port map
 - 5: (pwm)
 - 6: (pwm)
 - 7:
-- 8:
+- 8: 595 ports
 - 9: Tremolo Led
 - 10: Digital Pot SPI CS
 - 11: SPI MOSI  
