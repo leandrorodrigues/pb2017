@@ -37,9 +37,9 @@ Port map
 - 3: (pwm)
 - 4:
 - 5: (pwm)
-- 6: (pwm)
-- 7:
-- 8: 595 ports
+- 6: 595 clock
+- 7: 595 latch
+- 8: 595 data
 - 9: Tremolo Led
 - 10: Digital Pot SPI CS
 - 11: SPI MOSI  
