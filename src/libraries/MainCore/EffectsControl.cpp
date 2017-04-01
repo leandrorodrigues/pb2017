@@ -140,3 +140,15 @@ void EffectsControl::updateShifter(){
 	shiftOut(SH_DATA, SH_CLOCK, MSBFIRST, shifterState[0]);
 	digitalWrite(SH_LATCH, HIGH);
 }
+
+void EffectsControl::enterReset() {
+	output->printReset();
+	delay(500);
+
+	storage->clear();
+	storage->initEffectsNames();
+	storage->initDefaultPresets();
+
+	begin(output);
+
+}

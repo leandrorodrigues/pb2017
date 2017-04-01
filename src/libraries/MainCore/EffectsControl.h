@@ -22,6 +22,7 @@ class EffectsControl {
 		void bankDown();
 		void setTempo();
 		void enterTuner();
+		void enterReset();
 		void begin(MainOutput * op);
 
 		//métodos do modo de programação

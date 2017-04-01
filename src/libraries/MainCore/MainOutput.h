@@ -19,6 +19,7 @@ class MainOutput {
 		MainOutput();
 		void begin();
 		void print(String text);
+		void printReset();
 		void printState0(short bank, short preset, byte * presetMap);
 
 		void printProgramState(short bank, short preset, short effectNumber, char * effectName, bool on, byte * presetMap);

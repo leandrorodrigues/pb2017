@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
-  <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffff0d010000190000005d050000df020000</PLACEMENT>
+  <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffff5f0600006d000000af0a000033030000</PLACEMENT>
   <WINDOW type="default" module="ISIS"/>
   <WINDOW type="default" module="ARES"/>
  </FRAME>
@@ -9,7 +9,7 @@
   <PWI>
    <POPUP w="643" x="5" flags="00000002" y="106" h="376" pid="0" iid="-1">
     <PROPERTIES>
-     <ITEM name="Message Column Width">506</ITEM>
+     <ITEM name="Message Column Width">385</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
      <ITEM name="Source Column Width">100</ITEM>
      <ITEM name="Time Column Width">120</ITEM>
@@ -49,11 +49,12 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="32" x="206" flags="0000000a" y="134" h="43" pid="6" iid="1">
+   <POPUP w="32" x="206" flags="0000000b" y="134" h="43" pid="6" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
      <ITEM name="DispFormat">2</ITEM>
+     <ITEM name="LastGoto0">100</ITEM>
      <ITEM name="ShowChanges">Yes</ITEM>
      <ITEM name="ShowToolTips">Yes</ITEM>
      <ITEM name="TopLineAddress">00000000</ITEM>
@@ -135,7 +136,7 @@
      <ITEM name="HexMode">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="450" x="2516" flags="00008023" y="155" h="250" pid="0" iid="30">
+   <POPUP w="450" x="2404" flags="00008023" y="129" h="250" pid="0" iid="30">
     <PROPERTIES>
      <ITEM name="AutoEcho">0</ITEM>
      <ITEM name="HexMode">0</ITEM>

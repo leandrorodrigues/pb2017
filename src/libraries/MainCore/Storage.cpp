@@ -41,7 +41,7 @@ void Storage::setEffectsCount(short count) {
 
 byte * Storage::getPresetMap(short bank, short preset) {
 	byte * presetMap = malloc(2);
-	short addr =  PRESET_MAP_ADDR + (bank * preset * 2);
+	short addr =  PRESET_MAP_ADDR + (((bank * PRESETS_COUNT) + preset) * 2);
 	presetMap[0] = read(addr);
 	presetMap[1] = read(addr + 1);
 
@@ -49,13 +49,13 @@ byte * Storage::getPresetMap(short bank, short preset) {
 }
 
 void Storage::setPresetMap(short bank, short preset, byte* bytes) {
-	short addr =  PRESET_MAP_ADDR + (bank * preset * 2);
+	short addr =  PRESET_MAP_ADDR + (((bank * PRESETS_COUNT) + preset) * 2);
+
 	write(addr, bytes[0]);
 	write(addr + 1, bytes[1]);
 }
 
 void Storage::initEffectsNames() {
-	int n = 11;
 	char * effectNames[] = {
 			"TubeScr",
 			"Booster",
@@ -69,10 +69,11 @@ void Storage::initEffectsNames() {
 			"Envelope",
 			"NoiseGate"
 	};
+	int effectsCount = sizeof(effectNames) / sizeof(effectNames[0]);
 
-	setEffectsCount(n);
+	setEffectsCount(effectsCount);
 
-	for(int i = 0; i < n; i++) {
+	for(int i = 0; i < effectsCount; i++) {
 		setEffectName(i, effectNames[i]);
 	}
 
@@ -109,4 +110,22 @@ void Storage::write(int address, byte content) {
 	EEPROM.write(address, content);
 }
 
+void Storage::clear() {
+	for(int i = 0; i < EEPROM.length(); i++) {
+		EEPROM.write(i, 0);
+	}
+}
 
+void Storage::initDefaultPresets() {
+	int count = getEffectsCount();
+
+	byte bytes[2];
+
+	for(int i = 0; i < count; i++ ) {
+		bytes[0] = 0;
+		bytes[1] = 0;
+		bitWrite(bytes[i / 8], i % 8, true);
+
+		setPresetMap(i / PRESETS_COUNT, i % PRESETS_COUNT, bytes);
+	}
+}

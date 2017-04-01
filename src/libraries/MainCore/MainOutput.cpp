@@ -68,3 +68,9 @@ void MainOutput::printPresetMap(byte * presetMap) {
 		}
 	}
 }
+
+void MainOutput::printReset() {
+	lcd.clear();
+	lcd.home();
+	lcd.print("RESET");
+}

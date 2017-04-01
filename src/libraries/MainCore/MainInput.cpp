@@ -77,8 +77,11 @@ void MainInput::click(short button) {
 void MainInput::unclick(short button) {
 	if(button == PGR) {
 		if(!program_mode) {
-			//manter pressionado por 1 segundos
-			if(millis() - buttonChangeTime[PGR] > 1000) {
+			if(time - buttonChangeTime[PGR] > 3000) {
+				control->enterReset();
+			}
+			//manter pressionado por 1 segundo
+			else if(time - buttonChangeTime[PGR] > 1000) {
 				program_mode = true;
 				control->enterProgram();
 			}

@@ -33,7 +33,11 @@ class Storage {
 		//effects names
 		char * * getEffectsNames(short count);
 		void setEffectName(short effect, char * name);
+
+		//reset mode
 		void initEffectsNames();
+		void initDefaultPresets();
+		void clear();
 
 	private:
 		byte read(int address);
