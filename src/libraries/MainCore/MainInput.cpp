@@ -66,7 +66,7 @@ void MainInput::click(short button) {
 	else if (button == BANK_DOWN){
 		control->downProgram();
 	}
-	else if (button == TAP && program_mode) {
+	else if (button == SET && program_mode) {
 		control->setProgram();
 	}
 }
@@ -97,8 +97,11 @@ void MainInput::unclick(short button) {
  * Lê o valor do pino analógico e retorna o botão pressionado
  */
 int MainInput::translateButton(short val) {
-	if (val < 150)
+	Serial.println(val);
+	if (val < 50)
 		return -1; //nada pressionado
+	if (val < 150)
+		return 9;
 	if (val < 250)
 		return 8;
 	if (val < 350)

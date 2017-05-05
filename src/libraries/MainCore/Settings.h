@@ -30,8 +30,9 @@
 #define SW4 4
 #define BANK_UP 5
 #define BANK_DOWN 6
-#define TAP 7
+#define SET 7
 #define PGR 8
+#define TAP 9
 
 //I2C Address
 #define LCD_ADDRESS 0x20
